@@ -12,10 +12,6 @@ def add_todo():
 st.title("My To-do App")
 st.write("This app will help increase your productivity :D")
 
-
-st.checkbox("Buy grocery")
-st.checkbox("Throw the groceries")
-
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key = todo)
     if checkbox:
